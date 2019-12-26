@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #666;
+}
+@mixin justify-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nl_wrapper{
+    width: 600px;
+    min-height: calc(100vh - 20px);
+    margin: 10px auto;
+    @include justify-center;
+    position: relative;
+    color: white;
+    background: #220;
+    user-select: none;
+
+}
+.controller{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background: #222;
+    height: 150px;
+    @include justify-center;
+    flex-flow: row wrap;
+    padding: 10px;
+    .control_box{
+        flex: 0 0 33.33%;
+        p{
+            margin: 0px;
+            padding: 5px;
+        }
+        input[type="range"]{
+            width: 90%;
+            -webkit-appearance: none;
+            background: transparent;
+             &::-webkit-slider-thumb{
+                 -webkit-appearance: none;
+                 width: 10px;
+                 height: 20px;
+                 background: cyan;
+                 cursor: pointer;
+                 margin-top: -5px;
+             }
+            &::-webkit-slider-runnable-track{
+                -webkit-appearance: none;
+                background: rgb(114, 75, 75);
+                height: 10px;
+                border-radius: 10px;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
+.demo_box{
+    width: 200px;
+    height: 200px;
+    background: #555;
+    margin-top: 25%;
+}
+.project{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 8px;
+    border: 1px solid cyan;
+    color: #fff;
+    background: #222;
+}

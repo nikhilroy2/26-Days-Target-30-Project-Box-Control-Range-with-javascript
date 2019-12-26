@@ -1,0 +1,109 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #666;
+}
+
+.nl_wrapper {
+  width: 600px;
+  min-height: calc(100vh - 20px);
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  color: white;
+  background: #220;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.controller {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background: #222;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 10px;
+}
+
+.controller .control_box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+}
+
+.controller .control_box p {
+  margin: 0px;
+  padding: 5px;
+}
+
+.controller .control_box input[type="range"] {
+  width: 90%;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.controller .control_box input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 20px;
+  background: cyan;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.controller .control_box input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background: #724b4b;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.controller .control_box input[type="range"]:focus {
+  outline: none;
+}
+
+.demo_box {
+  width: 200px;
+  height: 200px;
+  background: #555;
+  margin-top: 25%;
+}
+
+.project {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  padding: 8px;
+  border: 1px solid cyan;
+  color: #fff;
+  background: #222;
+}
+/*# sourceMappingURL=style.css.map */
